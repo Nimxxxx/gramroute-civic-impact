@@ -2,39 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* GramRoute Design System - Travel Report Transform */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* GramRoute Color Palette */
+    --murky-teal: 187 91% 9%;        /* #022831 */
+    --blue-lagoon: 198 89% 22%;      /* #04566E */
+    --pastel-green: 121 20% 42%;     /* #689368 */
+    --green-pear: 75 62% 52%;        /* #B4D330 */
+    --blustery-blue: 215 30% 91%;    /* #D8DFE9 */
+    
+    /* Semantic Design Tokens */
+    --background: 215 30% 91%;       /* Blustery Blue */
+    --foreground: 187 91% 9%;        /* Murky Teal */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 187 91% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 187 91% 9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 198 89% 22%;          /* Blue Lagoon */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 121 20% 42%;        /* Pastel Green */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 75 62% 52%;            /* Green Pear */
+    --accent-foreground: 187 91% 9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 215 25% 85%;
+    --muted-foreground: 187 50% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 20% 80%;
+    --input: 215 20% 80%;
+    --ring: 198 89% 22%;
+
+    /* Custom GramRoute Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--blue-lagoon)), hsl(var(--pastel-green)));
+    --gradient-button: linear-gradient(135deg, hsl(var(--green-pear)), hsl(var(--pastel-green)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--blustery-blue)) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(var(--blue-lagoon) / 0.1);
+    --shadow-medium: 0 8px 30px hsl(var(--blue-lagoon) / 0.15);
+    --shadow-button: 0 4px 15px hsl(var(--green-pear) / 0.3);
 
     --radius: 0.5rem;
 
